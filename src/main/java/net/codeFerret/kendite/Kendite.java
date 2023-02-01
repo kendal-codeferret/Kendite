@@ -37,6 +37,7 @@ public class Kendite {
     {
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_KENDITE);
+            event.accept(ModItems.KENDITE_INGOT);
         }
     }
 

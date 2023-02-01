@@ -14,6 +14,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_KENDITE = ITEMS.register("raw_kendite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KENDITE_INGOT = ITEMS.register("kendite_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<SwordItem> KENDITE_SWORD =
 
     public  static void register(IEventBus eventBus)
     {
