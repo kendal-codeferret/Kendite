@@ -39,6 +39,9 @@ public class Kendite {
             event.accept(ModItems.RAW_KENDITE);
             event.accept(ModItems.KENDITE_INGOT);
         }
+        else if (event.getTab() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.KENDITE_SWORD);
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
