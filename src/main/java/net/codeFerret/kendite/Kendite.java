@@ -44,6 +44,8 @@ public class Kendite {
         else if (event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.KENDITE_SWORD);
         }
+        else if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+        }
         else if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.KENDITE_BLOCK);
         }

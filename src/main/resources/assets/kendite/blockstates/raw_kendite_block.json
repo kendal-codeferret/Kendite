@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "kendite:block/raw_kendite_block"}
+  }
+}

@@ -21,6 +21,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Kendite.MOD_ID);
 
 
+    public static final RegistryObject<Block> RAW_KENDITE_BLOCK = registerBlock("raw_kendite_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> KENDITE_BLOCK = registerBlock("kendite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()));
