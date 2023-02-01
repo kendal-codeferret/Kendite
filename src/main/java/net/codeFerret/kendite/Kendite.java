@@ -1,6 +1,7 @@
 package net.codeFerret.kendite;
 
 import com.mojang.logging.LogUtils;
+import net.codeFerret.kendite.block.ModBlocks;
 import net.codeFerret.kendite.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,6 +24,7 @@ public class Kendite {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -41,6 +43,9 @@ public class Kendite {
         }
         else if (event.getTab() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.KENDITE_SWORD);
+        }
+        else if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.KENDITE_BLOCK);
         }
     }
 
