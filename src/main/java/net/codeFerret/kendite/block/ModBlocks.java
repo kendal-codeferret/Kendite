@@ -27,6 +27,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> KENDITE_BLOCK = registerBlock("kendite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> KENDITE_ORE = registerBlock("kendite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+    public static final RegistryObject<Block> DEEPSLATE_KENDITE_ORE = registerBlock("deepslate_kendite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(8f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
 
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

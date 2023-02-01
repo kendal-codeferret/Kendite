@@ -45,6 +45,9 @@ public class Kendite {
             event.accept(ModItems.KENDITE_SWORD);
         }
         else if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.RAW_KENDITE_BLOCK);
+            event.accept(ModBlocks.KENDITE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_KENDITE_ORE);
         }
         else if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.KENDITE_BLOCK);

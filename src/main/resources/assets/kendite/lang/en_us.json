@@ -1,5 +1,9 @@
 {
   "item.kendite.raw_kendite": "Raw Kendite",
   "item.kendite.kendite_ingot": "Kendite Ingot",
-  "item.kendite.kendite_sword": "Kendite Sword"
+  "item.kendite.kendite_sword": "Kendite Sword",
+  "block.kendite.raw_kendite_block": "Raw Kendite Block",
+  "block.kendite.kendite_block": "Kendite Block",
+  "block.kendite.kendite_ore": "Kendite Ore",
+  "block.kendite.deepslate_kendite_ore": "Deepslate Kendite Ore"
 }
