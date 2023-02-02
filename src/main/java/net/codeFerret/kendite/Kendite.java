@@ -2,6 +2,7 @@ package net.codeFerret.kendite;
 
 import com.mojang.logging.LogUtils;
 import net.codeFerret.kendite.block.ModBlocks;
+import net.codeFerret.kendite.item.ModCreativeModeTabs;
 import net.codeFerret.kendite.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -53,6 +54,18 @@ public class Kendite {
             event.accept(ModBlocks.KENDITE_BLOCK);
         }
         else if (event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.KENDITE_PICKAXE);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.KENDITE_TAB)
+        {
+            event.accept(ModBlocks.KENDITE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_KENDITE_ORE);
+            event.accept(ModBlocks.RAW_KENDITE_BLOCK);
+            event.accept(ModBlocks.KENDITE_BLOCK);
+            event.accept(ModItems.RAW_KENDITE);
+            event.accept(ModItems.KENDITE_INGOT);
+            event.accept(ModItems.KENDITE_SWORD);
             event.accept(ModItems.KENDITE_PICKAXE);
         }
     }
