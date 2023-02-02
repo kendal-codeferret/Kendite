@@ -14,15 +14,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Kendite.MOD_ID);
 
-    public static final RegistryObject<Item> RAW_KENDITE = ITEMS.register("raw_kendite",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> KENDITE_INGOT = ITEMS.register("kendite_ingot",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_KENDITE = ITEMS.register("raw_kendite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KENDITE_INGOT = ITEMS.register("kendite_ingot", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<SwordItem> KENDITE_SWORD = ITEMS.register("kendite_sword",
-            () -> new SwordItem(Tiers.DIAMOND, 5, 0f, new Item.Properties()));
-    public static final RegistryObject<PickaxeItem> KENDITE_PICKAXE = ITEMS.register("kendite_pickaxe",
-            () -> new PickaxeItem(Tiers.NETHERITE, 0, 0f, new Item.Properties()));
+    public static final RegistryObject<SwordItem> KENDITE_SWORD = ITEMS.register("kendite_sword", () -> new SwordItem(Tiers.DIAMOND, 5, 0f, new Item.Properties()));
+    public static final RegistryObject<PickaxeItem> KENDITE_PICKAXE = ITEMS.register("kendite_pickaxe", () -> new PickaxeItem(Tiers.NETHERITE, 0, 0f, new Item.Properties()));
 
     public  static void register(IEventBus eventBus)
     {
